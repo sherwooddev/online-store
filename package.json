@@ -2,9 +2,6 @@
   "name": "online-store",
   "version": "0.0.0",
   "license": "MIT",
-  "engines": {
-    "node": ""
-  }
   "scripts": {
     "ng": "ng",
      "start": "ng serve",
