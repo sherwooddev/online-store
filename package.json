@@ -3,14 +3,15 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",
+     "ng": "ng",
      "start": "ng serve",
      "build": "ng build",
      "test": "ng test",
      "lint": "ng lint",
-     "e2e": "ng e2e"
+     "e2e": "ng e2e",
+     "postinstall": "ng build"
   },
-  "private": false,
+  "private": true,
   "dependencies": {
     "@angular/cli": "1.4.4",
     "@angular/compiler-cli": "^4.2.4",
