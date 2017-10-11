@@ -2,10 +2,16 @@
   "name": "online-store",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": ""
+  }
   "scripts": {
-    "heroku-prebuild": "npm install -g http-server",
-    "heroku-postbuild": "ng build --prod",
-    "start": "http-server dist/"
+    "ng": "ng",
+ +    "start": "ng serve",
+ +    "build": "ng build",
+ +    "test": "ng test",
+ +    "lint": "ng lint",
+ +    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -30,7 +36,6 @@
     "typescript": "~2.3.3"
   },
   "devDependencies": {
-
     "codelyzer": "~3.2.0",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
