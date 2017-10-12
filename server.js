@@ -1,8 +1,8 @@
 const compression = require('compression');
-const path = require('path');
+// const path = require('path');
 const express = require('express');
-const app = express();
-const port = process.env.PORT || 4200;
+// const app = express();
+// const port = process.env.PORT || 4200;
 
 // Gzip
 //app.use(compression());
@@ -11,11 +11,17 @@ const port = process.env.PORT || 4200;
 //app.use(express.static(__dirname + '/dist'));
 
 // Start the app by listening on the default Heroku port
-app.listen(port);
+// app.listen(port);
 
 // For all GET requests, send back index.html so that PathLocationStrategy can be used
 // app.get('/*', function(req, res) {
 //   res.sendFile(path.join(__dirname + '/dist/index.html'));
 // });
 
-console.log(`Server listening on ${port}`);
+// console.log(`Server listening on ${port}`);
+
+// Initialize the app.
+var server = app.listen(process.env.PORT || 8080, function () {
+  var port = server.address().port;
+  console.log("App now running on port", port);
+});
